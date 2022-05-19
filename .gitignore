@@ -14,7 +14,7 @@ dist-ssr
 coverage
 *.local
 winehq.key
-
+.gitignore
 /cypress/videos/
 /cypress/screenshots/
 

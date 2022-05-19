@@ -20,7 +20,7 @@
     import { RouterLink } from "vue-router";
     import { useTitle } from '@/stores/title'
 
-    import ChartIcon from '@/components/icons/IconChart.vue';
+    import ChartIcon from '@/components/icons/IconChart.vue'
     import DollarIcon from '@/components/icons/IconDollar.vue'
     import ShoppingIcon from '@/components/icons/IconShopping.vue'
     import CapsulesIcon from '@/components/icons/IconCapsules.vue'

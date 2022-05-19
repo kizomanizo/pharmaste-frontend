@@ -9,6 +9,9 @@
     import { LineChart } from "vue-chart-3";
     Chart.register(LineElement, LineController, CategoryScale, LinearScale, PointElement, Legend, Title)
 
+/**
+ * TODO: Fix this to TS ready state
+**/
     const labels = ['Jumatatu', 'Jumanne', 'Jumatano', 'Alhamisi', 'Ijumaa', 'Jumamosi', 'Jumapili'];
     const data = {
         labels: labels,
