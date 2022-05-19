@@ -1,0 +1,53 @@
+:root {
+	/* Heliotrope Color Palette */
+	--helio-90: rgba(145, 100, 255, 1);
+	--helio-80: rgba(155, 115, 255, 1);
+	--helio-70: rgba(165, 130, 255, 1); 
+	--helio-60: rgba(175, 145, 255, 1);
+	--helio-50: rgba(185, 160, 255, 1);
+	--helio-40: rgba(195, 175, 255, 1);
+	--helio-30: rgba(205, 190, 255, 1);
+	--helio-20: rgba(215, 205, 255, 1);
+	--helio-10: rgba(225, 220, 255, 1);
+	--helio-00: rgba(240, 240, 255, 1);
+
+	/* Green Color Palette*/
+	--green-90: rgba(20, 150, 20, 1);
+	--green-80: rgba(40, 160, 40, 1);
+	--green-70: rgba(60, 170, 60, 1);
+	--green-60: rgba(80, 180, 80, 1);
+	--green-50: rgba(100, 190, 100, 1);
+	--green-40: rgba(120, 200, 120, 1);
+	--green-30: rgba(140, 210, 140, 1);
+	--green-20: rgba(160, 220, 160, 1);
+	--green-10: rgba(180, 230, 180, 1);
+	--green-00: rgba(200, 240, 200, 1);
+
+	/* Red Color Palette */
+	--red-90: rgba(250, 60, 60, 1);
+	--red-80: rgba(245, 80, 80, 1);
+	--red-70: rgba(240, 100, 100, 1);
+	--red-60: rgba(235, 120, 120, 1);
+	--red-50: rgba(230, 140, 140, 1);
+	--red-40: rgba(225, 160, 160, 1);
+	--red-30: rgba(220, 180, 180, 1);
+	--red-20: rgba(215, 200, 200, 1);
+	--red-10: rgba(210, 220, 220, 1);
+	--red-00: rgba(205, 240, 240, 1);
+
+	/* Gray Color Palette */
+	--gray-90: rgba(40, 40, 40, 1 );
+	--gray-80: rgba(60, 60, 60, 1 );
+	--gray-70: rgba(80, 80, 80, 1 );
+	--gray-60: rgba(100, 100, 100, 1 );
+	--gray-50: rgba(120, 120, 120, 1 );
+	--gray-40: rgba(140, 140, 140, 1 );
+	--gray-30: rgba(160, 160, 160, 1 );
+	--gray-20: rgba(180, 180, 180, 1 );
+	--gray-10: rgba(200, 200, 200, 1 );
+	--gray-00: rgba(220, 220, 220, 1 );
+
+	/* Single Use Palette */
+	--white-00: rgba(255, 255, 255, 1);
+	--black-00: rgba(0, 0, 0, 1);
+}

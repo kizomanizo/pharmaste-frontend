@@ -1,0 +1,24 @@
+@import url(./fonts.css);
+@import url(./colors.css);
+
+/* Common elements */
+html {
+	background-color: var(--helio-00);
+}
+
+body, html, #app {
+    margin: 0px !important;
+    padding: 0px !important;
+    display: flex;
+}
+
+body {
+	transition: color 0.5s, background-color 0.5s;
+	line-height: 1.6;
+	font-family: Nunito-Regular, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
