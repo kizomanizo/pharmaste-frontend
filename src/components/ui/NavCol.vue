@@ -3,7 +3,7 @@
         <a class="company-logo navbar-brand col-md-2 col-lg-1 me-0 px-3" href="#">
             <img alt="Logo" class="logo" src="@/assets/images/pharmaste-logo.svg" width="72" height="72" />
             <br>
-            PharmAste
+            CC Pharmacy
         </a>
     </header>
 

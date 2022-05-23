@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import DashboardCard from "@/components/dashboard/DashboardCard.vue"
-    import LineChartCard from "@/components/dashboard/LineChartCard.vue"
+    // import LineChartCard from "@/components/dashboard/LineChartCard.vue"
+    import LineCard from "@/components/dashboard/LineCard.vue"
     import BarChartCard from "../components/dashboard/BarChartCard.vue"
     const percent = -12
     const stock = 21
@@ -32,7 +33,7 @@
         </DashboardCard>
     </div>
     <div class="card">
-        <LineChartCard />
+        <LineCard />
     </div>
     <div class="card">
         <BarChartCard />

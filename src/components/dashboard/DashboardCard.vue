@@ -42,14 +42,14 @@
 }
 
 .biggerText {
-    font-size: 130%;
-    font-weight: bold;
+    font-size: 150%;
+    font-weight: normal;
     margin-bottom: 30px;
     color: var(--gray-60)
 }
 
 .mutedText {
-    color: var(--gray-20);
+    color: var(--gray-30);
 }
 
 .cardNumber {
