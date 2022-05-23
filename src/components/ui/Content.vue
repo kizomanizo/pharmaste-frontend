@@ -9,6 +9,8 @@
             </div>
             <div class="rightContent">
                 <VCalendar />
+                <hr class="mute">
+                <SalesCard />
             </div>
         </div>
     </div>
@@ -17,11 +19,17 @@
 <script setup lang="ts">
     import { RouterView } from "vue-router"
     import VCalendar from '@/components/ui/CalendarWidget.vue'
+    import SalesCard from "@/components/ui/SalesCard.vue"
     import { useTitle } from '@/stores/title'
     const title = useTitle();
 </script>
 
 <style>
+
+    .mute {
+        color: #ccc;
+        border-color: #ccc;
+        }
 
     .rightBottom {
         position: relative;

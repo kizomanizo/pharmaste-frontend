@@ -1,5 +1,5 @@
 <template>
-    <div class="sticker salesSticker">
+    <div class="sticker infoSticker">
         <span class="cardText">
             <span class="biggerText">
                 <slot name="biggerText">No Update</slot>
@@ -35,7 +35,7 @@
     padding: 0 30px;
 }
 
-.salesSticker {
+.infoSticker {
     display: inline-grid;
     grid-template-columns: 7fr 2fr 1fr;
     gap: 5px;

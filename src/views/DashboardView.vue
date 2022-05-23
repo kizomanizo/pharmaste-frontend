@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import DashboardCard from "@/components/dashboard/DashboardCard.vue"
+    import DashboardCard from "@/components/dashboard/infoCard.vue"
     // import LineChartCard from "@/components/dashboard/LineChartCard.vue"
     import LineCard from "@/components/dashboard/LineCard.vue"
     import BarChartCard from "../components/dashboard/BarChartCard.vue"
