@@ -44,8 +44,12 @@
 }
     
 .rightTopLeft input::placeholder {
-    color: var(--gray-00);
+    border: 0 solid var(--gray-00);
     font-size: 18px;
+}
+
+.rightTopLeft input:hover {
+    border: 1 solid var(--gray-20);
 }
 
 .rightTopRight {

@@ -1,47 +1,96 @@
 <template>
-    <div class="sticker salesSticker">
+    <div class="stickerLatest salesSticker">
         <span class="leftIcon">
             <slot class="salesIcon">Icon</slot>
         </span>
         <span class="rightText">
             <span class="rightBoldText">
-                <slot class="boldText">Item Sold</slot>            </span>
+                <slot class="boldText">Dawa ya mwisho kuuzwa.</slot></span>
+            <br>
             <span class="rightLightText">
-                <slot class="mutedText">Sold at 12:00</slot>
+                <slot class="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
             </span>
         </span>
     </div>
-
+    <br>
+    <div class="stickerOld salesSticker">
+        <span class="leftIcon">
+            <slot class="salesIcon"><StethoscopeIcon /></slot>
+        </span>
+        <span class="rightText">
+            <span class="rightBoldText">
+                <slot class="boldText">Dawa ya mwisho kuuzwa.</slot></span>
+            <br>
+            <span class="rightLightText">
+                <slot class="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
+            </span>
+        </span>
+    </div>
+    <br>
+    <div class="stickerOld salesSticker">
+        <span class="leftIcon">
+            <slot class="salesIcon">Icon</slot>
+        </span>
+        <span class="rightText">
+            <span class="rightBoldText">
+                <slot class="boldText">Dawa ya mwisho kuuzwa.</slot>
+            </span>
+            <br>
+            <span class="rightLightText">
+                <slot class="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
+            </span>
+        </span>
+    </div>
 </template>
 
 <script setup lang="ts">
-// nothing yet
+    import StethoscopeIcon from '../icons/IconStethoscope.vue';
 </script>
 
-<style>
-.sticker {
-    border-radius: 10px;
-    background-color: var(--white-00);
-    padding: 10px;
+<style scoped>
+.stickerLatest {
+    border-radius: 15px;
+    background-color: var(--helio-10);
+    padding: 20px 10px;
+    margin: 20px 0 0 10px;
+    letter-spacing: 0.04em;
 }
 
-.card {
-    border-radius: 10px;
-    background-color: var(--white-00);
-    padding: 0 30px;
+.stickerOld {
+    border-radius: 15px;
+    background-color: var(--white-10);
+    border: 2px solid var(--helio-20);
+    padding: 20px 10px;
+    margin: 30px 0 0 10px;
+    letter-spacing: 0.02em;
 }
 
 .salesSticker {
     display: inline-grid;
-    grid-template-columns: 3fr 7fr;
+    grid-template-columns: 2fr 8fr;
     gap: 5px;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: var(--helio-30);
+    padding: 0 30px;
+}
+
+.leftIcon {
+    margin: auto;
+}
+
+.salesIcon {
+    color: var(--helio-30);
+    border-color: var(--helio-30);
 }
 
 .rightBoldText {
     font-size: 150%;
     font-weight: normal;
     margin-bottom: 30px;
-    color: var(--gray-60)
+    color: var(--helio-70)
 }
 
 .rightLightText {

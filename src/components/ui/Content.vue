@@ -24,7 +24,7 @@
     const title = useTitle();
 </script>
 
-<style>
+<style scoped>
 
     .mute {
         color: #ccc;
