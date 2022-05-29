@@ -4,9 +4,9 @@
             <input type="text" placeholder="Search...">
         </div>
         <div class="rightTopRight">
-            <BellIcon />
-            <UserIcon class="mutedIcon" />
-            <span class="text">Kidawa Simirefu</span>
+            <BellIcon svg-color="var(--helio-70)" />
+            <UserIcon svg-color="var(--helio-70)" />
+            <span class="text">Kidawa Mwanakwetu</span>
         </div>
     </div>
 </template>

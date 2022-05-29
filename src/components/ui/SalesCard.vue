@@ -1,7 +1,7 @@
 <template>
     <div class="stickerLatest salesSticker">
         <span class="leftIcon">
-            <slot class="salesIcon">Icon</slot>
+            <slot class="salesIcon"><ShoppingIcon svg-color="var(--helio-90)" /></slot>
         </span>
         <span class="rightText">
             <span class="rightBoldText">
@@ -15,7 +15,7 @@
     <br>
     <div class="stickerOld salesSticker">
         <span class="leftIcon">
-            <slot class="salesIcon"><StethoscopeIcon /></slot>
+            <slot class="salesIcon"><StethoscopeIcon svg-color="var(--helio-90)" /></slot>
         </span>
         <span class="rightText">
             <span class="rightBoldText">
@@ -29,7 +29,7 @@
     <br>
     <div class="stickerOld salesSticker">
         <span class="leftIcon">
-            <slot class="salesIcon">Icon</slot>
+            <slot class="salesIcon"><ShoppingIcon svg-color="var(--helio-90)" /></slot>
         </span>
         <span class="rightText">
             <span class="rightBoldText">
@@ -44,7 +44,8 @@
 </template>
 
 <script setup lang="ts">
-    import StethoscopeIcon from '../icons/IconStethoscope.vue';
+    import StethoscopeIcon from '@/components/icons/IconStetho.vue'
+    import ShoppingIcon from '@/components/icons/IconShopping.vue'
 </script>
 
 <style scoped>
@@ -78,6 +79,12 @@
 }
 
 .leftIcon {
+    margin: auto;
+}
+
+.leftIcon svg {
+    height: 35px;
+    fill: var(--helio-70);
     margin: auto;
 }
 
