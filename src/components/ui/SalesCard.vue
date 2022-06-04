@@ -1,46 +1,31 @@
 <template>
-    <div class="stickerLatest salesSticker">
-        <span class="leftIcon">
-            <slot class="salesIcon"><ShoppingIcon svg-color="var(--helio-90)" /></slot>
+    <div class="salesSticker stickerLatest" v-if="$slots.newSalesIcon">
+        <span class="leftIcon salesIcon">
+            <slot name="salesIcon"><ShoppingIcon svg-color="var(--helio-90)" /></slot>
         </span>
         <span class="rightText">
-            <span class="rightBoldText">
-                <slot class="boldText">Dawa ya mwisho kuuzwa.</slot></span>
+            <span class="rightBoldText boldText">
+                <slot name="boldText">Dawa ya mwisho kuuzwa.</slot></span>
             <br>
-            <span class="rightLightText">
-                <slot class="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
+            <span class="rightLightText mutedText">
+                <slot name="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
+            </span>
+        </span>
+    </div>
+    <div class="salesSticker stickerOld" v-else>
+        <span class="leftIcon salesIcon">
+            <slot name="salesIcon"><StethoscopeIcon svg-color="var(--helio-90)" /></slot>
+        </span>
+        <span class="rightText">
+            <span class="rightBoldText boldText">
+                <slot name="boldText">Dawa ya mwisho kuuzwa.</slot></span>
+            <br>
+            <span class="rightLightText mutedText">
+                <slot name="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
             </span>
         </span>
     </div>
     <br>
-    <div class="stickerOld salesSticker">
-        <span class="leftIcon">
-            <slot class="salesIcon"><StethoscopeIcon svg-color="var(--helio-90)" /></slot>
-        </span>
-        <span class="rightText">
-            <span class="rightBoldText">
-                <slot class="boldText">Dawa ya mwisho kuuzwa.</slot></span>
-            <br>
-            <span class="rightLightText">
-                <slot class="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
-            </span>
-        </span>
-    </div>
-    <br>
-    <div class="stickerOld salesSticker">
-        <span class="leftIcon">
-            <slot class="salesIcon"><ShoppingIcon svg-color="var(--helio-90)" /></slot>
-        </span>
-        <span class="rightText">
-            <span class="rightBoldText">
-                <slot class="boldText">Dawa ya mwisho kuuzwa.</slot>
-            </span>
-            <br>
-            <span class="rightLightText">
-                <slot class="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
-            </span>
-        </span>
-    </div>
 </template>
 
 <script setup lang="ts">
@@ -70,6 +55,7 @@
     display: inline-grid;
     grid-template-columns: 2fr 8fr;
     gap: 5px;
+    width: 90%;
 }
 
 .card {

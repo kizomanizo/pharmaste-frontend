@@ -1,7 +1,7 @@
 <template>
     <header class="navbar logo">
         <a class="company-logo navbar-brand col-md-2 col-lg-1 me-0 px-3" href="#">
-            <img alt="Logo" class="logo" src="@/assets/images/pharmaste-logo.svg" width="72" height="72" />
+            <LogoIcon svg-primary-color="var(--helio-10)" svg-secondary-color="var(--helio-90)" width="80" height="80" />
             <br>
             CC Pharmacy
         </a>
@@ -25,6 +25,7 @@
     import ShoppingIcon from '@/components/icons/IconShopping.vue'
     import CapsulesIcon from '@/components/icons/IconCapsules.vue'
     import GearIcon from '@/components/icons/IconGear.vue'
+    import LogoIcon from '@/components/icons/IconLogo.vue'
     
     const title = useTitle();
 </script>

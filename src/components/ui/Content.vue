@@ -10,7 +10,23 @@
             <div class="rightContent">
                 <VCalendar />
                 <hr class="mute">
-                <SalesCard />
+                <div>
+                    <SalesCard>
+                        <template #newSalesIcon></template>
+                        <template #boldText>Mauzo ya dawa leo hii.</template>
+                        <template #mutedText>Kiasi tulichouza.</template>
+                    </SalesCard>
+                    <SalesCard>
+                        <template #oldSalesIcon></template>
+                        <template #boldText>Jumla ya mauzo ya jana.</template>
+                        <template #mutedText>Kiasi kilichouzwa.</template>
+                    </SalesCard>
+                    <SalesCard>
+                        <template #oldSalesIcon></template>
+                        <template #boldText>Mauzo ya juzi.</template>
+                        <template #mutedText>Kiasi kilichouzwa.</template>
+                    </SalesCard>
+                </div>
             </div>
         </div>
     </div>
