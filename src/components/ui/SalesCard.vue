@@ -1,5 +1,6 @@
 <template>
-    <div class="salesSticker stickerLatest" v-if="$slots.newSalesIcon">
+    <!-- <div class="salesSticker stickerLatest" v-if="$slots.newSalesIcon"> -->
+    <div :class="{ stickerLatest: isNewSales, 'stickerOld': isOldSales }" >
         <span class="leftIcon salesIcon">
             <slot name="salesIcon"><ShoppingIcon svg-color="var(--helio-90)" /></slot>
         </span>
@@ -12,7 +13,7 @@
             </span>
         </span>
     </div>
-    <div class="salesSticker stickerOld" v-else>
+    <!-- <div class="salesSticker stickerOld" v-else>
         <span class="leftIcon salesIcon">
             <slot name="salesIcon"><StethoscopeIcon svg-color="var(--helio-90)" /></slot>
         </span>
@@ -24,13 +25,21 @@
                 <slot name="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
             </span>
         </span>
-    </div>
-    <br>
+    </div> -->
 </template>
 
 <script setup lang="ts">
-    import StethoscopeIcon from '@/components/icons/IconStetho.vue'
+
+    // import StethoscopeIcon from '@/components/icons/IconStetho.vue'
     import ShoppingIcon from '@/components/icons/IconShopping.vue'
+
+    defineProps({
+        isNewSales: Boolean,
+        isOldSales: Boolean
+    })
+
+    
+
 </script>
 
 <style scoped>

@@ -11,20 +11,17 @@
                 <VCalendar />
                 <hr class="mute">
                 <div>
-                    <SalesCard>
-                        <template #newSalesIcon></template>
-                        <template #boldText>Mauzo ya dawa leo hii.</template>
-                        <template #mutedText>Kiasi tulichouza.</template>
+                    <SalesCard :is-new-sales=true >
+                        <template #boldText>Mauzo ya leo.</template>
+                        <template #mutedText>123,500 TShs</template>
                     </SalesCard>
-                    <SalesCard>
-                        <template #oldSalesIcon></template>
-                        <template #boldText>Jumla ya mauzo ya jana.</template>
-                        <template #mutedText>Kiasi kilichouzwa.</template>
+                    <SalesCard :is-old-sales=true >
+                        <template #boldText>Mauzo ya jana.</template>
+                        <template #mutedText>230,000 TShs</template>
                     </SalesCard>
-                    <SalesCard>
-                        <template #oldSalesIcon></template>
+                    <SalesCard :is-old-sales=true >    
                         <template #boldText>Mauzo ya juzi.</template>
-                        <template #mutedText>Kiasi kilichouzwa.</template>
+                        <template #mutedText>189,400 TShs</template>
                     </SalesCard>
                 </div>
             </div>
@@ -34,7 +31,7 @@
 
 <script setup lang="ts">
     import { RouterView } from "vue-router"
-    import VCalendar from '@/components/ui/CalendarWidget.vue'
+    import VCalendar from "@/components/ui/CalendarWidget.vue"
     import SalesCard from "@/components/ui/SalesCard.vue"
     import { useTitle } from '@/stores/title'
     const title = useTitle();
