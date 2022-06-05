@@ -33,7 +33,7 @@
     import { RouterView } from "vue-router"
     import VCalendar from "@/components/ui/CalendarWidget.vue"
     import SalesCard from "@/components/ui/SalesCard.vue"
-    import { useTitle } from '@/stores/title'
+    import { useTitle } from "@/stores/title"
     const title = useTitle();
 </script>
 
