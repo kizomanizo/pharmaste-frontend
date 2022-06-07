@@ -1,8 +1,10 @@
 <template>
-    <!-- <div class="salesSticker stickerLatest" v-if="$slots.newSalesIcon"> -->
-    <div :class="{ stickerLatest: isNewSales, 'stickerOld': isOldSales }" >
+    <div class="salesSticker" :class="{ stickerLatest: isNewSales, 'stickerOld': isOldSales }" >
         <span class="leftIcon salesIcon">
-            <slot name="salesIcon"><ShoppingIcon svg-color="var(--helio-90)" /></slot>
+            <slot name="salesIcon">
+                <ShoppingIcon svg-color="var(--helio-90)" v-if="isNewSales" />
+                <StethoscopeIcon svg-color="var(--helio-90)" v-else />
+            </slot>
         </span>
         <span class="rightText">
             <span class="rightBoldText boldText">
@@ -13,24 +15,11 @@
             </span>
         </span>
     </div>
-    <!-- <div class="salesSticker stickerOld" v-else>
-        <span class="leftIcon salesIcon">
-            <slot name="salesIcon"><StethoscopeIcon svg-color="var(--helio-90)" /></slot>
-        </span>
-        <span class="rightText">
-            <span class="rightBoldText boldText">
-                <slot name="boldText">Dawa ya mwisho kuuzwa.</slot></span>
-            <br>
-            <span class="rightLightText mutedText">
-                <slot name="mutedText">Iliuzwa mnamo saa 12:00 mchana</slot>
-            </span>
-        </span>
-    </div> -->
 </template>
 
 <script setup lang="ts">
 
-    // import StethoscopeIcon from '@/components/icons/IconStetho.vue'
+    import StethoscopeIcon from '@/components/icons/IconStetho.vue'
     import ShoppingIcon from '@/components/icons/IconShopping.vue'
 
     defineProps({
@@ -67,14 +56,10 @@
     width: 90%;
 }
 
-.card {
-    border-radius: 15px;
-    background-color: var(--helio-30);
-    padding: 0 30px;
-}
 
 .leftIcon {
     margin: auto;
+    padding: 10px;
 }
 
 .leftIcon svg {
@@ -97,16 +82,15 @@
 
 .rightLightText {
     color: var(--gray-30);
+    font-weight: normal;
 }
 
 @media only screen and (max-device-width: 900px) {
-    .sticker {
+    .salesSticker {
         margin: 5px 0;
-    }
-
-    .stickers {
-    display: block !important;
-    margin: 0 auto;
+        display: block !important;
+        margin: 0 auto;
     }
 }
+
 </style>

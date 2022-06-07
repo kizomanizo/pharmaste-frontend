@@ -11,15 +11,15 @@
                 <VCalendar />
                 <hr class="mute">
                 <div>
-                    <SalesCard :is-new-sales=true >
+                    <SalesCard :is-new-sales="true" >
                         <template #boldText>Mauzo ya leo.</template>
                         <template #mutedText>123,500 TShs</template>
                     </SalesCard>
-                    <SalesCard :is-old-sales=true >
+                    <SalesCard :is-old-sales="true" >
                         <template #boldText>Mauzo ya jana.</template>
                         <template #mutedText>230,000 TShs</template>
                     </SalesCard>
-                    <SalesCard :is-old-sales=true >    
+                    <SalesCard :is-old-sales="true" >    
                         <template #boldText>Mauzo ya juzi.</template>
                         <template #mutedText>189,400 TShs</template>
                     </SalesCard>
