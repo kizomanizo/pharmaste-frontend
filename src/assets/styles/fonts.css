@@ -1,15 +1,15 @@
 /* Fonts for use in PharmAste Project */
 @font-face {
-	font-family: Cookie;
-	src: url('/src/assets/fonts/Cookie-Regular.woff2');
+    font-family: Cookie;
+    src: url('/src/assets/fonts/Cookie-Regular.woff2');
 }
 
 @font-face {
-	font-family: Roboto-Regular;
-	src: url('/src/assets/fonts/Roboto-Regular.ttf');
+    font-family: Roboto-Regular;
+    src: url('/src/assets/fonts/Roboto-Regular.ttf');
 }
 
 @font-face {
-	font-family: Nunito-Regular;
-	src: url('/src/assets/fonts/Nunito-Regular.ttf');
+    font-family: Nunito-Regular;
+    src: url('/src/assets/fonts/Nunito-Regular.ttf');
 }
